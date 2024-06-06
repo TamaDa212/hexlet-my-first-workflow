@@ -1,0 +1,9 @@
+name: hello-world
+# on - определяет события которые запускает workflows
+on: push
+jobs:
+  build:
+    runs-on: Linux
+    steps:
+      - uses: actions/checkout@v3
+      - run: make say-hello
